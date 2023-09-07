@@ -22,4 +22,19 @@ rate: 5%
 final balance: 1320.68
 
 """
-
+P=int(input("annual investment? : "))
+r=int(input("the interest rate per year? : "))
+r=(r/100)
+t=int(input("the length of time in years? :"))
+earn=0
+for i in range(t):
+    i+=1
+    if i==1:
+        earn+=P+(P*r)
+        earn=earn+P 
+    elif i!=1 and i!=t:
+        earn=earn+(earn*r)
+        earn=earn+P
+    else:
+        earn=earn+(earn*r)
+print(round(earn,2))

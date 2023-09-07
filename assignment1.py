@@ -13,3 +13,10 @@ Your program should ask the user for
 * The program will calculate the amount of interest earned and display it.
 * Appropriate formatting of the output is a requirement for this assignment
 """
+
+P=int(input("the amount invested? : "))
+r=float(input("the interest rate per year? : "))
+r=float(r/100)
+t=int(input("the length of time in years? :"))
+I=P*r*t
+print(I)
