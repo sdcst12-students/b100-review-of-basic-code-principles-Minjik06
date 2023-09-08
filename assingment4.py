@@ -36,4 +36,4 @@ while a!=0 and a>0:
     left = debt-c
     a=left
 print(f"{month} months")
-print(round(i,2))
+print(f"He will have paid {round(i,2)} in interest")
