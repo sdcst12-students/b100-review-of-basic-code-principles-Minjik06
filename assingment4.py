@@ -21,4 +21,19 @@ How many months will it take him to pay off the car.  How much interest has he p
 84 months
 He will have paid 21711.60 in interest
 """
+a=int(input("initial debt? : "))
+b=float(input("annual interest rate? : "))
+b=b/100
+c=int(input("monthly payments? : "))
+month=0
+totalp=0
+i=0
 
+while a!=0 and a>0:
+    month+=1
+    debt=a+a*b
+    i+=a*b
+    left = debt-c
+    a=left
+print(f"{month} months")
+print(f"He will have paid {round(i,2)} in interest")
